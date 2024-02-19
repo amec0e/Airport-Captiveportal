@@ -9,11 +9,12 @@ Please keep in mind these are not entirely well crafted. There may also be poten
 
 Please **use at your own risk!**
 
-Myself (amec0e) assumes no liability or responsibility for any misuse or unintended consequences resulting from the use of these tools.
+Myself (amec0e) and LAB401 assumes no liability or responsibility for any misuse or unintended consequences resulting from the use of these tools.
 
 These tools are provided with the expectation that users will comply with all applicable laws and regulations. They are intended for educational and research purposes only.
 
-**Please note:** Myself (amec0e) does not provide support for these tools.
+**Please note:** Myself (amec0e) and LAB401 does not provide support for these tools.
+
 ### Demo Capture:
 
 I have included a `demo.cap` file for you to test the captive portal with.
