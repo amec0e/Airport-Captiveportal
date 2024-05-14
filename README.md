@@ -40,10 +40,6 @@ The password is `pineapplesareyummy`
 
 ![4  Default popover](https://github.com/amec0e/Airport-Captiveportal/assets/88857687/ed9dba94-f456-49f0-9c5e-0a481e3cda96)
 
-**Correct Page:**
-
-![Correct with ACLMessage](https://github.com/amec0e/Airport-Captiveportal/assets/88857687/d176cf36-ab26-44c4-a00d-af5671d7d926)
-
 **Correct with ACL Message:**
 
 ![5  Correct php with ACLMessage](https://github.com/amec0e/Airport-Captiveportal/assets/88857687/3a49f216-1f95-49a4-a9db-0c07788e0392)
