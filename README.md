@@ -25,7 +25,8 @@ The password is `pineapplesareyummy`
 
 **Default Page:**
 
-![Default with popover](https://github.com/amec0e/Airport-Captiveportal/assets/88857687/e13e86c1-9b47-4434-9ec0-763bd55a09a9)
+![1  Default php](https://github.com/amec0e/Airport-Captiveportal/assets/88857687/df386727-b7fe-421c-ab4e-f39d0f392b55)
+
 
 **Checking Page:**
 
