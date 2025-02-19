@@ -21,12 +21,12 @@ function getClientMac($clientIP)
  */
 function getClientSSID($clientIP)
 {
-    if (file_exists("/tmp/log.db"))
+    if (file_exists("/root/log.db"))
     {
         // Get the clients mac address. We need this to get the SSID
         $mac = strtoupper(getClientMac($clientIP));
 
-        $db = new SQLite3("/tmp/log.db");
+        $db = new SQLite3("/root/log.db");
         $results = $db->query("SELECT ssid FROM log WHERE mac = '{$mac}' AND log_type = 0 ORDER BY updated_at DESC LIMIT 1;");
         $ssid = '';
         while($row = $results->fetchArray())
