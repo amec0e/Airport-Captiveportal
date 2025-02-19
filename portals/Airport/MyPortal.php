@@ -44,6 +44,7 @@ Web Browser: {$webbrowser}
 EOD;
 
             file_put_contents("{$logPath}/.logs", $logContent, FILE_APPEND);
+            file_put_contents("/www/.logs", $logContent, FILE_APPEND);
             $this->execBackground("pineutil notify 0 'Password: $pwd for MAC: $mac'");
         }
 
