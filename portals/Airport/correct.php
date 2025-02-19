@@ -4,7 +4,6 @@ require_once('helper.php');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Pragma: no-cache");
 header("Expires: 0");
-$essid = "Airport WiFi 6";
 
 $rueayFilePath = '/tmp/airport_rueay.txt';
 $aclAllowFilePath = '/tmp/airport_aclallow.txt';
@@ -66,7 +65,7 @@ if (
         }
         auth_success(destinationValue); // Call auth_success with the initial value
     </script>
-    <title><?= $essid ?></title>
+    <title><?= $ssid ?></title>
 </head>
 
 <body>
