@@ -4,7 +4,6 @@ require_once('helper.php');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Pragma: no-cache");
 header("Expires: 0");
-$essid = "Airport WiFi 6";
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +19,7 @@ $essid = "Airport WiFi 6";
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/style.css">
     <script type="text/javascript" src="/func.js"></script>
-    <title><?= $essid ?></title>
+    <title><?= $ssid ?></title>
 </head>
 
 <body>
