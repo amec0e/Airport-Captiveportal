@@ -31,7 +31,9 @@ header("Expires: 0");
                         <img src="airport-logo.png" class="img-fluid mb-3" style="max-width: 200; max-height: 100px; object-fit: contain;">
                         <h3 class="card-title text-center">Oops!</h3>
                         <p class="text-center small">It looks like you’ve entered an incorrect passphrase, please check your spelling and try again.</p>
-                        <button class="btn btn-orange btn-block text-white mt-5" onclick="GoBack()">Go Back</button>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-orange btn-block text-white mt-5" onclick="GoBack()">Go Back</button>
+                        </div>
                         
                         <p class="text-left small text-muted mt-4 d-flex justify-content-between align-items-center">
                             STATUS: ERR_FAILED_AUTH
