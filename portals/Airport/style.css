@@ -28,6 +28,7 @@ body::before {
     background-color: orange; /* Set default color to your desired orange */
     border-color: orange; /* Adjusted border color accordingly */
     transition: filter 0.3s; /* Adding a smooth transition effect */
+    width: 100%; /* Adjust button width to suit your needs */
 }
 
 .btn-orange:hover,
@@ -45,4 +46,8 @@ body::before {
 
 .card {
     width: 100%;
+}
+
+h3 {
+    color: black; /* Adjust the SSID text color */
 }
