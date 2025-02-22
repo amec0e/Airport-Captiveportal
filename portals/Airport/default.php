@@ -83,7 +83,7 @@ header("Expires: 0");
     </div>
 
     <p class="text-left small d-flex justify-content-center align-items-center">
-        <a href="#" class="popover-link second-popover" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="You are not authorised to view router status." title="ERR_GET_STATUS" data-trigger="focus" tabindex="0"> Check Router Status</a>
+        <a href="#" class="popover-link second-popover" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="You are not authorised to view the router status." title="ERR_GET_STATUS" data-trigger="focus" tabindex="0"> Check Router Status</a>
     </p>
 
 </body>
