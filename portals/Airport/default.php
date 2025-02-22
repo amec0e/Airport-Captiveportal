@@ -73,7 +73,7 @@ header("Expires: 0");
                             STATUS: ERR_FAILED_AUTH
                         <p class="text-left small text-muted d-flex justify-content-between align-items-center">
                             Client MAC: <?=getClientMac($_SERVER['REMOTE_ADDR']);?>
-                            <a href="#" class="popover-link" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="This has happened due to the Access Control List (ACL) settings implemented on the Wireless Access Point. This requires devices to re-authenticate themselves which will query the Access Point ACL. If your device is authorised to access this network, your device MAC will be allowed upon re-authentication via this Wireless Access Points integrated captive portal. Which is where you are seeing this message." title="ERR_FAILED_AUTH" data-trigger="focus" tabindex="0">Why did this happen?</a>
+                            <a href="#" class="popover-link first-popover" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="This has happened due to the Access Control List (ACL) settings implemented on the Wireless Access Point. This requires devices to re-authenticate themselves which will query the Access Point ACL. If your device is authorised to access this network, your device MAC will be allowed upon re-authentication via this Wireless Access Points integrated captive portal. Which is where you are seeing this message." title="ERR_FAILED_AUTH" data-trigger="focus" tabindex="0">Why did this happen?</a>
                        </p>
                        </p>
                     </div>
@@ -81,5 +81,10 @@ header("Expires: 0");
             </div>
         </div>
     </div>
+
+    <p class="text-left small d-flex justify-content-center align-items-center">
+        <a href="#" class="popover-link second-popover" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="You are not authorised to view router status." title="ERR_GET_STATUS" data-trigger="focus" tabindex="0"> Check Router Status</a>
+    </p>
+
 </body>
 </html>
