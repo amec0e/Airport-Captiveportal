@@ -29,6 +29,7 @@ body::before {
     border-color: orange; /* Adjusted border color accordingly */
     transition: filter 0.3s; /* Adding a smooth transition effect */
     width: 100%; /* Adjust button width to suit your needs */
+    height: 37px; /* Adjust height to your desired width */
 }
 
 .btn-orange:hover,
