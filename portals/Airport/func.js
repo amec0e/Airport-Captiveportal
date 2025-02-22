@@ -148,16 +148,30 @@ function GCC() {
 // Popover initialization
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Initialize popovers manually
     $('[data-toggle="popover"]').popover({
-        container: 'body'
+        container: 'body',  // Ensures popovers are attached to the body for positioning
+        trigger: 'manual'   // Manual trigger for each popover
     });
 
+    // Handle click events for popover links
     $(".popover-link").on("click", function (event) {
-        event.preventDefault();
-        $('[data-toggle="popover"]').popover("toggle");
+        event.preventDefault();  // Prevent default action (e.g., page navigation)
+        
+        // Toggle the popover for the specific link that was clicked
+        $(this).popover("toggle");
     });
 
+    // Optional: Ensure that focus is managed when a popover is shown
     $(".popover-link").on("shown.bs.popover", function () {
-        $(".popover-link").focus();
+        $(this).focus();
+    });
+
+    // Close popover when clicking outside of it
+    $(document).on("click", function (event) {
+        // Check if the click is outside of any popover or its trigger link
+        if (!$(event.target).closest('.popover-link').length && !$(event.target).closest('.popover').length) {
+            $('[data-toggle="popover"]').popover('hide');
+        }
     });
 });
