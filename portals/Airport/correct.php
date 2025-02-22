@@ -63,7 +63,7 @@ if (
 
             xhr.send(params);
         }
-        auth_success(destinationValue); // Call auth_success with the initial value
+        //auth_success(destinationValue); // Call auth_success with the initial value
     </script>
     <title><?= $ssid ?></title>
 </head>
