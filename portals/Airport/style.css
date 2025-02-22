@@ -52,3 +52,23 @@ body::before {
 h3 {
     color: black; /* Adjust the SSID text color */
 }
+
+/* First popover link styles */
+a.popover-link.first-popover {
+    font-weight: bold;       /* Makes text bold can remove for non bold */
+    color: blue;          /* Custom color for first popover */
+}
+
+a.popover-link.first-popover:hover {
+    color: blue;          /* Optional: Change color on hover for first popover */
+}
+
+/* Second popover link styles */
+a.popover-link.second-popover {
+    font-weight: bold;       /* Makes text bold */
+    color: blue;          /* Custom color for second popover */
+}
+
+a.popover-link.second-popover:hover {
+    color: blue;          /* Optional: Change color on hover for second popover */
+}
